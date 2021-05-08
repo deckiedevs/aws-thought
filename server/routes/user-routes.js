@@ -37,7 +37,7 @@ router.get('/users/:username', (req, res) => {
         ExpressionAttributeValues: {
             ':user': req.params.username
         },
-        ProjectionExpression: '#th, #ca',
+        ProjectionExpression: '#un, #th, #ca',
         ScanIndexForward: false
     };
 
